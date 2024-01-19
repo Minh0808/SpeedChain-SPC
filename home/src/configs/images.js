@@ -1,6 +1,31 @@
 
 const images = {
     Background: '/images/IconHome/Background.png',
+    Background_Mobile: '/images/IconHome/1.png',
+    BTStart:'/images/IconHome/btn-web.png',
+    BTStart_Mobile:'/images/IconHome/btn-3-.png',
+    BTExit:'/images/IconHome/buttonmain.png',
+    BTExit_Mobile:'/images/IconHome/buttonmain-.png',
+    BackIcon:'/images/IconHome/Back icon.png',
+    UserIcon:'/images/IconHome/group-users 1.png',
+    ChampionIcon:'/images/IconHome/_x32_4_Award.png',
+    MapIcon:'/images/IconHome/Rectangle 6.png',
+    UnknowIcon:'/images/IconHome/unknown 1.png',
+    StartIcon:'/images/IconHome/nut start 1.png',
+    SpeedometerIcon:'/images/IconHome/speedometer.png',
+    LocationIcon:'/images/IconHome/location 1.png',
+    EndIcon:'/images/IconHome/End.png',
+    EndDisapleIcon:'/images/IconHome/EndDisaple.png',
+    AssetIcon:'/images/IconHome/Asset.png',
+    RocketIcon:'/images/IconHome/Group.png',
+    WalletIcon:'/images/IconHome/wallet.png',
+    AutocratIcon:'/images/IconHome/autocrat.png',
+    CrystalIcon:'/images/IconHome/crystal.png',
+    NotFoundIcon:'/images/IconHome/Asset 1 1.png',
+    Location:'/images/IconHome/location.png',
+    LinkHomepage:'/images/IconHome/LinkHome.png',
+    CaretdownIcon:'/images/IconHome/caret-down.png',
+    MobileIcon:'/images/IconHome/Mobile.png',
 }
 
 export default images

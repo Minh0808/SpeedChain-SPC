@@ -15,3 +15,7 @@ code {
   font-family: Irish Grover;
   src: url(../public/Assets/IrishGrover-Regular.ttf);
 }
+@font-face {
+  font-family: Poppins;
+  src: url(../public/Assets/Poppins-Bold.ttf);
+}

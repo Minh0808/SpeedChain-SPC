@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import images from '../../configs/images'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+import images from '../../../configs/images'
 import { useState } from 'react'
 
 const Wrapper = styled.div`
@@ -12,9 +12,6 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media only screen and (max-width: 575px) {
-    background-image: url(${images.Background_Mobile});
-  }
 `
 const Container = styled.div`
   width: 90%;
@@ -30,17 +27,10 @@ const Container = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    @media only screen and (max-width: 575px) {
-      font-size: 32px;
-    }
   }
   .Start {
     width: 319px;
     height: 319px;
-  }
-  .link {
-    text-decoration: none;
-    color: white;
   }
 `
 const Header = styled.div`
@@ -64,9 +54,7 @@ const Back = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  @media only screen and (max-width: 575px) {
-    font-size: 14px;
-  }
+  cursor: pointer;
 `
 const Text = styled.div`
   display: flex;
@@ -76,17 +64,10 @@ const Text = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  @media only screen and (max-width: 575px) {
-    font-size: 14px;
-  }
 `
 const IMG = styled.img`
   width: 30px;
   height: 30px;
-  @media only screen and (max-width: 575px) {
-    width: 24px;
-    height: 24px;
-  }
 `
 const Box = styled.div`
   display: flex;
@@ -100,11 +81,6 @@ const Box = styled.div`
   border-radius: 12px;
   background: #262626;
   filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.4));
-  @media only screen and (max-width: 575px) {
-    width: 95%;
-    height: 62px;
-    padding: 0px 15px;
-  }
 `
 const User = styled.div`
   display: flex;
@@ -116,18 +92,12 @@ const ColumnText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
-  @media only screen and (max-width: 575px) {
-    gap: 5px;
-  }
   .Community {
     font-family: Poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
-    @media only screen and (max-width: 575px) {
-      font-size: 16px;
-    }
   }
   .textUs {
     font-family: Poppins;
@@ -135,9 +105,6 @@ const ColumnText = styled.div`
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
-    @media only screen and (max-width: 575px) {
-      font-size: 14px;
-    }
   }
 `
 const Champion = styled.div`
@@ -149,16 +116,9 @@ const Champion = styled.div`
   font-weight: 600;
   line-height: 24px;
   gap: 15px;
-  @media only screen and (max-width: 575px) {
-    font-size: 16px;
-  }
   .Champion {
     width: 46px;
     height: 36px;
-    @media only screen and (max-width: 575px) {
-      width: 24px;
-      height: 20px;
-    }
   }
 `
 const Map = styled.div`
@@ -171,27 +131,9 @@ const Map = styled.div`
   font-weight: 800;
   line-height: 24px;
   gap: 120px;
-  @media only screen and (max-width: 575px) {
-    font-size: 26px;
-    gap: 30px;
-  }
   .Map {
     width: 106px;
     height: 100px;
-    @media only screen and (max-width: 575px) {
-      width: 62px;
-      height: 58px;
-    }
-  }
-  .textColumn {
-    display: flex;
-    flex-direction: row;
-    @media only screen and (max-width: 575px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 5px;
-    }
   }
 `
 const Unknown = styled.div`
@@ -203,16 +145,9 @@ const Unknown = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  @media only screen and (max-width: 575px) {
-    font-size: 16px;
-  }
   .Unknown {
     width: 46px;
     height: 46px;
-    @media only screen and (max-width: 575px) {
-      width: 24px;
-      height: 24px;
-    }
   }
 `
 const Bottom = styled.div`
@@ -224,11 +159,6 @@ const Bottom = styled.div`
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
-  @media only screen and (max-width: 575px) {
-    width: 100%;
-    gap: 30px;
-    font-size: 16px;
-  }
 `
 const Speedometer = styled.div`
   width: 204px;
@@ -240,10 +170,6 @@ const Speedometer = styled.div`
   border-radius: 12px;
   background: #262626;
   box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.4);
-  @media only screen and (max-width: 575px) {
-    width: 156px;
-    height: 69px;
-  }
 `
 const Location = styled.div`
   width: 204px;
@@ -255,33 +181,9 @@ const Location = styled.div`
   border-radius: 12px;
   background: #262626;
   box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 0.4);
-  @media only screen and (max-width: 575px) {
-    width: 156px;
-    height: 69px;
-  }
 `
-const StyledImg = styled.div`
-  height: 320px;
-  .End {
-    width: 319px;
-    height: 319px;
-  }
-  .EndDisaple {
-    width: 319px;
-    height: 319px;
-  }
-`
-const Games = () => {
-  const [playGames, setPlayGames] = useState(0)
 
-  const handledPlayGame = (_ix: number) => {
-    setPlayGames(_ix)
-    if (_ix === 1) {
-      setTimeout(() => {
-        window.location.href = '/topgames'
-      }, 2000)
-    }
-  }
+const StartGames = () => {
   return (
     <Wrapper>
       <Container>
@@ -310,53 +212,26 @@ const Games = () => {
         </Box>
         <Map>
           <IMG src={images.MapIcon} className="Map" />
-          <div className="textColumn">
-            <div>0 m</div>
-            <div>/ 0 min</div>
-          </div>
+          20 m / 3 min
         </Map>
         <Unknown>
           <IMG src={images.UnknowIcon} className="Unknown" />
           Unknown
         </Unknown>
-        <StyledImg>
-          {playGames === 0 ? (
-            <IMG
-              onClick={() => handledPlayGame(1)}
-              style={{ cursor: 'pointer' }}
-              src={images.StartIcon}
-              className="Start"
-            />
-          ) : (
-            <>
-              {playGames === 1 ? (
-                <IMG
-                  onClick={() => handledPlayGame(2)}
-                  style={{ cursor: 'pointer' }}
-                  src={images.EndIcon}
-                  className="End"
-                />
-              ) : (
-                <IMG style={{ cursor: 'pointer' }} src={images.EndDisapleIcon} className="EndDisaple" />
-              )}
-            </>
-          )}
-        </StyledImg>
+        <img src={images.StartIcon} className="Start" />
         <Bottom>
           <Speedometer>
             <IMG src={images.SpeedometerIcon} className="Speedometer" />
-            1000/1000m
+            980/1000m
           </Speedometer>
-          <Link to={'/my-location'} className="link">
-            <Location>
-              <IMG src={images.LocationIcon} className="Location" />
-              My Location
-            </Location>
-          </Link>
+          <Location>
+            <IMG src={images.LocationIcon} className="Location" />
+            My Location
+          </Location>
         </Bottom>
       </Container>
     </Wrapper>
   )
 }
 
-export default Games
+export default StartGames
